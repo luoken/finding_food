@@ -24,4 +24,10 @@ defmodule FindMeFood.Restaurants do
   def get_restaurant_by_name(name) do
     Repo.get_by(Restaurant, name: name)
   end
+
+  def create_restaurant(attrs \\ %{}) do
+    %Restaurant{}
+    |> Restaurant.changeset(attrs)
+    |> Repo.insert()
+  end
 end
