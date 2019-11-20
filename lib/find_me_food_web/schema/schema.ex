@@ -14,9 +14,9 @@ defmodule FindMeFoodWeb.Schema.Schema do
     end
 
     @desc "Get a restaurant by name"
-    field :restaurantv2, :restaurant do
+    field :restaurant_by_name, :restaurant do
       arg(:name, non_null(:string))
-      resolve(&FindMeFoodWeb.Resolvers.Restaurant.restaurantv2/3)
+      resolve(&FindMeFoodWeb.Resolvers.Restaurant.restaurant_by_name/3)
     end
   end
 

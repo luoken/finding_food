@@ -9,7 +9,7 @@ defmodule FindMeFoodWeb.Resolvers.Restaurant do
     {:ok, Restaurants.get_restaurant(id)}
   end
 
-  def restaurantv2(_, %{name: name}, _) do
+  def restaurant_by_name(_, %{name: name}, _) do
     {:ok, Restaurants.get_restaurant_by_name(name)}
   end
 end
