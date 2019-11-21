@@ -36,4 +36,11 @@ defmodule FindMeFood.Restaurants do
     |> Restaurant.changeset(attrs)
     |> Repo.insert()
   end
+
+  @doc """
+    Returns the total count
+  """
+  def get_total_count do
+    Repo.one(from i in Restaurant, select: count(i.id))
+  end
 end

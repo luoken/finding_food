@@ -20,6 +20,11 @@ defmodule FindMeFoodWeb.Schema.Schema do
       arg(:name, non_null(:string))
       resolve(&FindMeFoodWeb.Resolvers.Restaurant.restaurant_by_name/3)
     end
+
+    @desc "Get total count of restaurant"
+    field :get_total_count, non_null(:integer) do
+      resolve(&FindMeFoodWeb.Resolvers.Restaurant.get_total_count_restaurants/3)
+    end
   end
 
   mutation do

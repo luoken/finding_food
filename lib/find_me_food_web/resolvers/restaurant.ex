@@ -39,4 +39,11 @@ defmodule FindMeFoodWeb.Resolvers.Restaurant do
         {:error, "count not create restaurant"}
     end
   end
+
+  @doc """
+    Get total count of restaurants.
+  """
+  def get_total_count_restaurants(_, _, _) do
+    {:ok, Restaurants.get_total_count()}
+  end
 end
