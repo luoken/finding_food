@@ -4,13 +4,13 @@ Playing with graphql thing w/ elixir.
 
 
 List of things it can/can't do:
- [x] Get all restaurants
- [x] Get restaurant by ID
- [x] Get restaurant by Name
- [x] Add new restaurant
- [ ] Update restaurant
- [ ] Count total items in query
- [ ] Get restaurant by property
+- [x] Get all restaurants
+- [x] Get restaurant by ID
+- [x] Get restaurant by Name
+- [x] Add new restaurant
+- [ ] Update restaurant
+- [ ] Count total items in query
+- [ ] Get restaurant by property
 
 
 Things to do before you start you move on to start the application:
