@@ -11,6 +11,7 @@ List of things it can/can't do:
 - [ ] Update restaurant
 - [ ] Count total items in query
 - [ ] Get restaurant by property
+- [ ] Get count by filtering
 
 
 Things to do before you start you move on to start the application:
