@@ -21,10 +21,16 @@ defmodule FindMeFood.Restaurants do
     Repo.get(Restaurant, id)
   end
 
+  @doc """
+    Return Single restaurant by name
+  """
   def get_restaurant_by_name(name) do
     Repo.get_by(Restaurant, name: name)
   end
 
+  @doc """
+    Creates a restaurant
+  """
   def create_restaurant(attrs \\ %{}) do
     %Restaurant{}
     |> Restaurant.changeset(attrs)

@@ -1,6 +1,6 @@
 defmodule FindMeFoodWeb.Schema.Schema do
   use Absinthe.Schema
-  # import_type(FindMeFoodWeb.Schema.InputTypes) 
+
   import_types(FindMeFoodWeb.Schema.InputTypes)
 
   query do
