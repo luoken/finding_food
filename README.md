@@ -32,4 +32,4 @@ To start your Phoenix server:
     * `mix run priv/repo/seeds.exs`
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:4000/graphiql`](http://localhost:4000/graphiql) from your browser. yay!
+Now you can visit [`localhost:4000/graphiql`](http://localhost:4000/graphiql) from your browser. yay! now go try
